@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #cbd6ec, #70f0ee, #4e69d4);
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #1063bd;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans";
+}
+
+section {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+}
+
+p {
+  position: relative;
+  clear: right;
+}
+
+div {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3.5px solid rgba(0, 0, 0, 0.064);
+  width: 100%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+.subtitle1 {
+  float: right;
+  width: 100px;
+  padding: 5px;
+  margin: -3px -3px 0px;
+  border: 3.5px solid #cbd6ec;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  background-color: #70f0ee;
+}
+
+.subtitle2 {
+  float: right;
+  color: black;
+  width: 100px;
+  padding: 5px;
+  margin: -3px -3px 0px;
+  border: 3.5px solid #cbd6ec;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  background-color: #ffe5e5;
+}
+
+.subtitle3 {
+  color: black;
+  float: right;
+  width: 100px;
+  padding: 5px;
+  margin: -3px -3px 0px;
+  border: 3.5px solid #cbd6ec;
+  border-top-right-radius: 10px;
+  text-align: center;
+  font-size: 125%;
+  font-weight: bold;
+  background-color: #e5ffe7;
+}
+
+.content {
+  padding: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Trebuchet MS", "Lucida Sans";
+  color: black;
+  margin: 3px;
+  height: 150px;
+  overflow: auto;
+}
+
+.row {
+  width: 90%;
+}
+
+/*desktop version*/
+@media (min-width: 992px) {
+  .device-desktop {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/*tablet version*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .device-tablet {
+    float: left;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section:nth-of-type(3) { 
+    width: 100%;
+  }
+
+  .device-mobile {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*mobile version*/
+@media (max-width: 767px) {
+  .device-mobile {
+    float: left;
+    width: 100%;
+    content: center;
+  }
+}
